@@ -6,10 +6,13 @@ Official implementation of **"Enhancing Skin Lesion Classification via Uncertain
 
 UAGF is a multi-backbone fusion framework that adaptively combines features from ConvNeXt-V2, Swin Transformer, and EfficientNet-B3 using an uncertainty-guided gating mechanism. The key components include:
 
-- **Squeeze-and-Excitation (SE) blocks** for channel-wise feature recalibration
-- **Per-branch temperature scaling** for calibrated uncertainty estimation
-- **MLP-based gating network** that uses entropy, max probability, and margin to compute per-sample fusion weights
-- **Optuna-optimized XGBoost** meta-classifier on fused features
+– **Squeeze-and-Excitation (SE) blocks** for channel-wise feature recalibration
+
+– **Per-branch temperature scaling** for calibrated uncertainty estimation
+
+– **MLP-based gating network** that uses entropy, max probability, and margin to compute per-sample fusion weights
+
+– **Optuna-optimized XGBoost** meta-classifier on fused features
 
 ## Architecture
 
@@ -106,8 +109,10 @@ python visualize.py --config config/isic2018.yaml --plot roc
 ## Data Preparation
 
 Download the ISIC datasets:
-- [ISIC 2018](https://challenge.isic-archive.com/landing/2018/)
-- [ISIC 2019](https://challenge.isic-archive.com/landing/2019/)
+
+– [ISIC 2018](https://challenge.isic-archive.com/landing/2018/)
+
+– [ISIC 2019](https://challenge.isic-archive.com/landing/2019/)
 
 Place extracted backbone features in `data/ISIC2018/` and `data/ISIC2019/` with the naming convention specified in the config files.
 
@@ -115,9 +120,11 @@ Place extracted backbone features in `data/ISIC2018/` and `data/ISIC2019/` with 
 
 ## Requirements
 
-- Python >= 3.8
-- PyTorch >= 1.12
-- CUDA-capable GPU (tested on NVIDIA GeForce RTX 5090)
+– Python >= 3.8
+
+– PyTorch >= 1.12
+
+– CUDA-capable GPU (tested on NVIDIA GeForce RTX 5090)
 
 See `requirements.txt` for the full dependency list.
 
