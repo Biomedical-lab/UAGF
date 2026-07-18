@@ -6,10 +6,10 @@ Official implementation of **"Enhancing Skin Lesion Classification via Uncertain
 
 UAGF is a multi-backbone fusion framework that adaptively combines features from ConvNeXt-V2, Swin Transformer, and EfficientNet-B3 using an uncertainty-guided gating mechanism. The key components include:
 
--- **Squeeze-and-Excitation (SE) blocks** for channel-wise feature recalibration
--- **Per-branch temperature scaling** for calibrated uncertainty estimation
--- **MLP-based gating network** that uses entropy, max probability, and margin to compute per-sample fusion weights
--- **Optuna-optimized XGBoost** meta-classifier on fused features
+– **Squeeze-and-Excitation (SE) blocks** for channel-wise feature recalibration
+– **Per-branch temperature scaling** for calibrated uncertainty estimation
+– **MLP-based gating network** that uses entropy, max probability, and margin to compute per-sample fusion weights
+– **Optuna-optimized XGBoost** meta-classifier on fused features
 
 ## Architecture
 
