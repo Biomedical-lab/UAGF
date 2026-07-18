@@ -109,6 +109,7 @@ python visualize.py --config config/isic2018.yaml --plot roc
 ## Data Preparation
 
 Download the ISIC datasets:
+
 – [ISIC 2018](https://challenge.isic-archive.com/landing/2018/)
 
 – [ISIC 2019](https://challenge.isic-archive.com/landing/2019/)
