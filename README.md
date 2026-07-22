@@ -145,8 +145,7 @@ See `requirements.txt` for the full dependency list.
 
 ## Acknowledgment
 
-This research was supported by The VNUHCM-University of Information Technology's Scientific Research Support Fund.
-
+This research was supported by The VNUHCM-University of Information Technology's Scientific Research Support Fund, and Ho Chi Minh City University of Technology and Engineering.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
