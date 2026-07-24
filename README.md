@@ -131,13 +131,13 @@ See `requirements.txt` for the full dependency list.
 ## Citation
 
 ```bibtex
-@article{NGUYEN2026133657,
+@article{nguyen2026enhancing,
   title={Enhancing Skin Lesion Classification via Uncertainty-Guided Adaptive Gated Fusion of Multiple Backbones},
-  author={Ba-Duy Nguyen and Van-Dung Hoang and Hien D. Nguyen},
+  author={Nguyen, Ba-Duy and Hoang, Van-Dung and Nguyen, Hien D},
   journal={Expert Systems with Applications},
   pages={133657},
   year={2026},
-  issn={0957-4174},
+  publisher={Elsevier},
   doi={https://doi.org/10.1016/j.eswa.2026.133657},
   url={https://www.sciencedirect.com/science/article/pii/S0957417426025650}
 }
