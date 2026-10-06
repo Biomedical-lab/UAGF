@@ -1,11 +1,4 @@
-"""UAGF Evaluation Pipeline.
 
-Multi-seed evaluation, statistical significance testing, and ablation study.
-
-Usage:
-    python evaluate.py --config config/isic2018.yaml
-    python evaluate.py --config config/isic2018.yaml --mode ablation
-"""
 
 import argparse
 import json
@@ -42,9 +35,8 @@ def parse_args():
     return parser.parse_args()
 
 
-# ======================================================================
+
 # Multi-seed full pipeline
-# ======================================================================
 
 def run_full_pipeline(seed, Xc_tr, Xs_tr, Xe_tr, y_tr,
                       Xc_va, Xs_va, Xe_va, y_va,
@@ -270,9 +262,9 @@ def run_multiseed(cfg, Xc_tr, Xs_tr, Xe_tr, y_tr,
     print(f"\nSaved: {os.path.join(out_dir, 'statistical_tests.csv')}")
 
 
-# ======================================================================
+
 # Ablation study
-# ======================================================================
+
 
 class IdentityBlock(nn.Module):
     def forward(self, x):
@@ -493,9 +485,9 @@ def run_ablation_study(cfg, Xc_tr, Xs_tr, Xe_tr, y_tr,
     print(f"\nSaved: {os.path.join(out_dir, 'ablation_results.csv')}")
 
 
-# ======================================================================
+
 # Complexity analysis
-# ======================================================================
+
 
 def run_complexity_analysis(cfg, Xc_te, Xs_te, Xe_te, device):
     """Compute model complexity: parameters, FLOPs, inference time."""
